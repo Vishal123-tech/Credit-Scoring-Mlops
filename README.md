@@ -19,6 +19,8 @@
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/504ad478-e1fe-4ab6-a9ac-82d41de85a78" width="300" alt="Credit scoring project visual">
+  <br>
+  <a href="https://credit-scoring-mlops.streamlit.app"><strong>Launch the live Streamlit showcase →</strong></a>
 </div>
 
 > A research and training engine for credit-risk modeling. It is designed to demonstrate reproducible ML engineering, evaluation, and governance patterns—not to make real-world lending decisions without additional validation, controls, and regulatory review.

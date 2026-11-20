@@ -241,7 +241,7 @@ if page == "Overview":
             yaxis_title="",
             legend_title="",
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
     with right:
         st.markdown("### Pipeline flow")
         st.markdown(
@@ -273,7 +273,7 @@ elif page == "Model benchmark":
     display_data["PR-AUC"] = display_data["PR-AUC"].map(lambda value: f"{value:.3f}")
     display_data["Gini"] = display_data["Gini"].map(lambda value: f"{value:.3f}")
     display_data["Business loss"] = display_data["Business loss"].map(lambda value: f"{value:,.0f}")
-    st.dataframe(display_data, use_container_width=True, hide_index=True)
+    st.dataframe(display_data, width="stretch", hide_index=True)
 
     csv = BENCHMARK.to_csv(index=False).encode("utf-8")
     st.download_button(
