@@ -1,0 +1,25 @@
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local data and generated pipeline outputs
+data/raw/
+data/cache/
+data/processed/
+data/processed_base/
+artifacts/
+
+# Local experiment stores
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+optuna.db
+mlruns/
+
+# Logs and local reports
+*.log
+reports/

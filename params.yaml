@@ -1,0 +1,37 @@
+seed: 42
+data:
+  holdout_size: 0.15
+features:
+  top_n: 300
+  cardinality_threshold: 10
+  # Sensitive attributes and direct age-derived ratios remain available for
+  # fairness auditing but are excluded from model inputs.
+  exclude: [CODE_GENDER, DAYS_BIRTH, DAYS_EMPLOYED_PERCENT, EMPLOYED_TO_BIRTH_RATIO, CAR_TO_BIRTH_RATIO, PHONE_TO_BIRTH_RATIO]
+  protected: [CODE_GENDER, DAYS_BIRTH]
+cv:
+  n_splits: 5
+hpo:
+  n_splits: 3
+  trials: 30
+  timeout: 3600
+train:
+  early_stopping_rounds: 100
+  early_stopping_fraction: 0.1
+calibration:
+  enabled: true
+  method: sigmoid
+business:
+  fn_cost: 10.0
+  fp_cost: 1.0
+mlflow:
+  experiment: Home_Credit_Default_Risk
+  tracking_uri: sqlite:///mlflow.db
+monitoring:
+  psi_alert: 0.25
+  psi_top_k: 20
+fairness:
+  di_min: 0.8
+  min_group_size: 30            # groups smaller than this are reported but excluded from DI/EO
+gate:
+  auc_epsilon: 0.005
+  fixture_auc_min: 0.70
