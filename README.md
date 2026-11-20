@@ -284,6 +284,19 @@ For each complete model artifact, the exporter creates a <code>serving_model.job
 
 Use the notebooks for exploration; use the <code>src/</code> CLI and DVC graph for reproducible training.
 
+## Streamlit showcase
+
+The repository includes a lightweight [Streamlit control room](app.py) for exploring the project online. It presents the historical benchmark, pipeline architecture, governance controls, scoring readiness, and local-run commands in a recruiter-friendly interface.
+
+Run it locally with:
+
+~~~bash
+python -m pip install -r requirements.txt
+streamlit run app.py
+~~~
+
+The public showcase intentionally runs without borrower-scoring artifacts because raw data and trained models are excluded from Git. Generate and review a model locally before integrating a serving bundle into an authenticated application.
+
 ## Generated artifacts
 
 | Location | Contents |
