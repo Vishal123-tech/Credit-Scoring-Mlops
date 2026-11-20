@@ -18,9 +18,16 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/504ad478-e1fe-4ab6-a9ac-82d41de85a78" width="300" alt="Credit scoring project visual">
+  <a href="https://credit-scoring-mlops.streamlit.app">
+    <img src="https://img.shields.io/badge/Live%20demo-Open%20Streamlit%20app-FF4B4B?logo=streamlit&logoColor=white" alt="Open live Streamlit app">
+  </a>
+  <a href="https://github.com/Vishal123-tech/Credit-Scoring-Mlops">
+    <img src="https://img.shields.io/badge/Repository-GitHub-181717?logo=github&logoColor=white" alt="Open GitHub repository">
+  </a>
   <br>
-  <a href="https://credit-scoring-mlops.streamlit.app"><strong>Launch the live Streamlit showcase →</strong></a>
+  <sub>Data → Features → Models → Governance → Serving</sub>
+  <br><br>
+  <strong>Stack:</strong> Python · scikit-learn · LightGBM · XGBoost · CatBoost · Optuna · MLflow · DVC · SHAP
 </div>
 
 > A research and training engine for credit-risk modeling. It is designed to demonstrate reproducible ML engineering, evaluation, and governance patterns—not to make real-world lending decisions without additional validation, controls, and regulatory review.
