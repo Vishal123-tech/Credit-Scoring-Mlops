@@ -393,7 +393,3 @@ Models trained in this repository formed the core of **[LoanSight](https://githu
 LoanSight loads artifacts exported here, retrieves client data from a database, runs the selected model, and returns default probability along with a human-readable risk label (Low / Medium / High) and an interactive **SHAP waterfall chart**. The service supports side-by-side comparison of two models, manual feature overriding ("what-if" analysis), multi-currency, and experiment history.
 
 Thus, **this repository is the research and training engine**, while LoanSight serves as the product frontend wrapper around the resulting models.
-#   C r e d i t - S c o r i n g - M l o p s  
- #   C r e d i t - S c o r i n g - M l o p s  
- #   C r e d i t - S c o r i n g - M l o p s  
- 
